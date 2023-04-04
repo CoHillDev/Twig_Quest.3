@@ -1,0 +1,16 @@
+{# home.html.twig #}
+
+{% extends 'layout.html.twig' %}
+{# Héritage du layout.html.twig #}
+
+{% block title %}
+	{#Utilisation du titre parent de layout et ajout du mot "- Accueil" #}
+	{{ parent() }}
+	- Accueil
+{% endblock %}
+
+{% block content %}
+	{# Ajout d'un h1 et p propres à la home #}
+	<h1>Ceci est une page d'accueil avec un h1 ici</h1>
+	<p>Avec du contenu ici</p>
+{% endblock %}

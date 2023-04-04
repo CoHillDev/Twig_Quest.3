@@ -1,0 +1,27 @@
+{# layout.html.twig #}
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{% block title %}
+			{# Parent content qui s'affiche dans cet exercice #}
+			This is a parent TITLE
+		{% endblock %}<br>
+
+		<link rel="stylesheet" href="/assets/css/style.css">
+		<link rel="icon" href="/assets/images/favicon.png">
+	</head>
+	<body>
+		{% include 'Components/navbar.html.twig' %}
+
+		{% block content %}This is a parent CONTENT<br>
+		{% endblock %}
+		{# Parent content qui ne s'affiche pas dans cet exercice #}
+
+		{% include '_footer.html.twig' %}
+
+	</body>
+</html>

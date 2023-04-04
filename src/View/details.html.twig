@@ -1,0 +1,16 @@
+{# details.html.twig #}
+
+{% extends 'layout.html.twig' %}
+{# Héritage du layout.html.twig #}
+
+{% block title %}
+	{#Utilisation du titre parent de layout et ajout du mot "- Details" #}
+	{{ parent() }}
+	- Details
+{% endblock %}
+
+{% block content %}
+	{# Ajout d'un h1 et p propres à la view Details #}
+	<h1>This is an h1 to detail stuff</h1>
+	<p>With some detailed content here</p>
+{% endblock %}
